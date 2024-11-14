@@ -1,0 +1,254 @@
+﻿{
+  "Scenario": "Regression",
+  "DataSource": {
+    "Version": 3,
+    "EscapeCharacter": "\"",
+    "ReadMultiLines": false,
+    "KeepDiacritics": false,
+    "KeepPunctuations": false,
+    "AllowQuoting": false,
+    "Type": "TabularFile",
+    "FilePath": "D:\\EcoBalance\\EcoBalance\\Dados\\dados_energia.csv",
+    "Delimiter": ",",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "Data",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Temperatura",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Consumo",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 3,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.98614888960373825,
+        "RuntimeInSeconds": 0.045,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e6",
+          "e0": {
+            "OutputColumnNames": [
+              "Temperatura"
+            ],
+            "InputColumnNames": [
+              "Temperatura"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "Data",
+            "OutputColumnName": "Data"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "Temperatura",
+              "Data"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 0.03125,
+            "L2Regularization": 16.629953,
+            "LabelColumnName": "Consumo",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.98479189616153029,
+        "RuntimeInSeconds": 0.043,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e6",
+          "e0": {
+            "OutputColumnNames": [
+              "Temperatura"
+            ],
+            "InputColumnNames": [
+              "Temperatura"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "Data",
+            "OutputColumnName": "Data"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "Temperatura",
+              "Data"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 0.031373974,
+            "L2Regularization": 16.24026,
+            "LabelColumnName": "Consumo",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.98387985906629072,
+        "RuntimeInSeconds": 0.041,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e6",
+          "e0": {
+            "OutputColumnNames": [
+              "Temperatura"
+            ],
+            "InputColumnNames": [
+              "Temperatura"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "Data",
+            "OutputColumnName": "Data"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "Temperatura",
+              "Data"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 0.03125,
+            "L2Regularization": 17.052685,
+            "LabelColumnName": "Consumo",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.98386139913336235,
+        "RuntimeInSeconds": 0.044,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e6",
+          "e0": {
+            "OutputColumnNames": [
+              "Temperatura"
+            ],
+            "InputColumnNames": [
+              "Temperatura"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "Data",
+            "OutputColumnName": "Data"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "Temperatura",
+              "Data"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 0.03125,
+            "L2Regularization": 16.514633,
+            "LabelColumnName": "Consumo",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsPoissonRegressionRegression",
+        "Score": 0.982908562257116,
+        "RuntimeInSeconds": 0.046,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e6",
+          "e0": {
+            "OutputColumnNames": [
+              "Temperatura"
+            ],
+            "InputColumnNames": [
+              "Temperatura"
+            ]
+          },
+          "e1": {
+            "InputColumnName": "Data",
+            "OutputColumnName": "Data"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "Temperatura",
+              "Data"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e6": {
+            "L1Regularization": 0.03125,
+            "L2Regularization": 17.23116,
+            "LabelColumnName": "Consumo",
+            "FeatureColumnName": "Features"
+          }
+        }
+      }
+    ],
+    "Estimators": {
+      "e0": "ReplaceMissingValues",
+      "e1": "FeaturizeText",
+      "e2": "Concatenate",
+      "e3": "FastTreeRegression",
+      "e4": "FastForestRegression",
+      "e5": "LightGbmRegression",
+      "e6": "LbfgsPoissonRegressionRegression",
+      "e7": "SdcaRegression"
+    },
+    "Schema": "e0 * e1 * e2 * (e3 + e4 + e5 + e6 + e7)",
+    "MetricName": "RSquared",
+    "ModelFilePath": "D:\\EcoBalance\\EcoBalance\\MLModel.mlnet"
+  },
+  "Type": "TrainingConfig",
+  "Version": 5,
+  "TrainingOption": {
+    "Version": 2,
+    "Subsampling": false,
+    "Type": "RegressionTrainingOption",
+    "TrainingTime": 600,
+    "LabelColumn": "Consumo",
+    "ValidationOption": {
+      "Version": 0,
+      "Type": "CrossValidationValidationOption",
+      "NumberOfFolds": 5
+    }
+  }
+}
