@@ -15,4 +15,3 @@ namespace EcoBalance.Models
         public Empresa? Empresa { get; set; }
     }
 }
-Projeto EcoBalance, uma API de monitoramento de 
